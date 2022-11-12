@@ -2,11 +2,13 @@ package ru.gb.hw.model;
 
 import lombok.Data;
 import lombok.Getter;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Objects;
 
 @Data
+@Component
 public class ProductsRepositori {
     private List<Product> products=List.of(
             new Product(1,"Product 1", 10),
